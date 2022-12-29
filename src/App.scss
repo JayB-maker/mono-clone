@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@font-face {
+  font-family: "monoType";
+  src: url("./fonts/monoType-Medium.ttf");
+}
+
+body {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "monoType";
+  }
+  font-family: 'DM Sans', sans-serif;
+}
