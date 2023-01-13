@@ -4,6 +4,9 @@ export interface ICardProps {
   skewname?:boolean;
   duration?:any;
   animationduration?: string;
+  bgimage?: string;
+  bgsize?: string;
+  bgposition?: string;
   position?: string;
   transition?: string;
   bg?: string;
@@ -50,6 +53,7 @@ export interface ICardProps {
   justifycontent?: string;
   aligncontent?: string;
   gap?: string;
+  hgap?: string;
   transform?: string;
   gridcolumn?: string;
   shadow?: string;
@@ -170,6 +174,7 @@ export interface ILinkProps {
   flexratio?: string;
   flexdirection?: string;
   gap?: string;
+  hgap?: string;
   hcolor?: string;
   hbg?: string;
   hdecoration?: string;
@@ -240,6 +245,7 @@ export interface ITextProps {
   mobileSize?: string;
   position?: string;
   heavy?: boolean;
+  italic?: boolean;
   lineHeight?: string;
   mobilelineHeight?: string;
   transform?: string;

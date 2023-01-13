@@ -58,6 +58,9 @@ export const Card = styled("div")<ICardProps>`
     props.duration ? `${props.duration}` : "1s"};
   position: ${(props) => (props.position ? `${props.position}` : "unset")};
   background: ${(props) => (props.bg ? `${props.bg}` : "transparent")};
+  background-image: ${(props) => (props.bgimage ? `${props.bgimage}` : "unset")};
+  background-size: ${(props) => (props.bgsize ? `${props.bgsize}` : "unset")};
+  background-position: ${(props) => (props.bgposition ? `${props.bgposition}` : "unset")};
   color: ${(props) => props.color && `${props.color}`};
   flex-wrap: ${(props) => props.wrap && "wrap"};
   width: ${(props) => (props.width ? `${props.width}` : "unset")};
@@ -284,6 +287,7 @@ export const LinkText = styled(Link)<ILinkProps>`
     color: ${(props) => props.hcolor && `${props.hcolor}`};
     background: ${(props) => props.hbg && `${props.hbg}`};
     text-decoration: ${(props) => props.hdecoration && `${props.hdecoration}`};
+    gap: ${(props) => (props.hgap && `${props.hgap}`)};
   }
 
   @media screen and (max-width: 1024px) {
@@ -291,6 +295,7 @@ export const LinkText = styled(Link)<ILinkProps>`
     font-size: ${(props) => props.mdsize && `${props.mdsize}`};
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     display: ${(props) => props.mddisplay && `${props.mddisplay}`};
+    gap: ${(props) => (props.hgap ? `${props.hgap}` : "unset")};
   }
   @media screen and (max-width: 600px) {
     width: ${(props) => props.smwidth && `${props.smwidth}`};
@@ -415,6 +420,7 @@ export const Text = styled.p<ITextProps>`
   text-align: ${(props) => props.center && "center"};
   color: ${(props) => props.color && `${props.color}`};
   cursor: ${(props) => props.pointer && "pointer"};
+  font-style: ${(props) => props.italic && "italic"};
   width: ${(props) => (props.width ? `${props.width}` : "unset")};
   height: ${(props) => (props.height ? `${props.height}` : "unset")};
   padding-top: ${(props) => (props.ptop ? `${props.ptop}` : "0px")};
@@ -571,7 +577,9 @@ export const MainSection = styled("section")<ICardProps>`
   background: ${(props) => props.bg && props.bg};
   //   height: 100%;
   height: ${(props) => props.height && props.height};
-
+  background-image: ${(props) => (props.bgimage ? `${props.bgimage}` : "unset")};
+  background-size: ${(props) => (props.bgsize ? `${props.bgsize}` : "unset")};
+  background-position: ${(props) => (props.bgposition ? `${props.bgposition}` : "unset")};
   overflow-y: ${(props) => props.overflowy && props.overflowy};
   overflow-x: ${(props) => props.overflowx && props.overflowx};
   z-index: ${(props) => (props.index ? `${props.index}` : "unset")};
@@ -623,6 +631,11 @@ export const Circle = styled("div")<ICardProps>`
 `;
 
 export const Button = styled("button")<ICardProps>`
+position: ${(props) => (props.position ? `${props.position}` : "unset")};
+top: ${(props) => (props.top ? `${props.top}` : "unset")};
+  left: ${(props) => (props.left ? `${props.left}` : "unset")};
+  right: ${(props) => (props.right ? `${props.right}` : "unset")};
+  bottom: ${(props) => (props.bottom ? `${props.bottom}` : "unset")};
   color: ${(props) => props.color && `${props.color}`};
   background: ${(props) => props.bg && `${props.bg}`};
   width: ${(props) => props.width && `${props.width}`};
@@ -647,7 +660,8 @@ export const Button = styled("button")<ICardProps>`
   outline: none !important;
   transition: 0.5s opacity;
   &:hover {
-    opacity: 0.7;
+    // opacity: 0.7;
+    gap: ${(props) => props.hgap && `${props.hgap}`};
   }
 
   @media screen and (max-width: 1024px) {
