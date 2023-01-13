@@ -11,6 +11,11 @@ const animateOnSlide = keyframes`
   100% { top: 0px; }
 `;
 
+const animateOnOpacity = keyframes`
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+`;
+
 const AnimationCard = styled("div")`
   transform: skew(0deg, 0deg);
   animation: ${animateOnSkew} 0.5s 0.5s forwards;
@@ -45,6 +50,7 @@ const AnimationScreenCard = styled("div")`
 `;
 
 const DottedLine = styled("div")`
+animation: ${animateOnOpacity} 1s 2.3s forwards;
   width: 87px;
   height: 280px;
   transform: skew(0deg, 28deg);
@@ -55,6 +61,7 @@ const DottedLine = styled("div")`
   top: 138px;
   left: 150px;
   z-index: 4;
+  opacity: 0;
 `;
 
 const Card1 = () => {
