@@ -5,7 +5,7 @@ import LeftDiv from "./leftDiv/LeftDiv";
 const HomeHeroSection = () => {
   return (
     <>
-      <MainSection width="100%">
+      <MainSection width="100%" padding="0 0 100px">
         <InnerSection>
           <Card flex alignitems="center">
             <LeftDiv />
