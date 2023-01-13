@@ -13,7 +13,7 @@ const animateOnSlide = keyframes`
 
 const animateOnSliding = keyframes`
   0%   { left: 190px; }
-  10% { left: 0px; }
+  2% { left: 0px; }
   100% {left: -290px;}
 `;
 const animateOnContinousSliding = keyframes`
@@ -40,7 +40,7 @@ export const AnimationCard = styled("div")`
 `;
 
 const AnimationScreenCard = styled("div")`
-  animation: ${animateOnSlide} 0.5s 3.8s forwards;
+  animation: ${animateOnSlide} 0.5s 4.8s forwards;
   position: absolute;
   width: 150%;
   height: 150%;
@@ -55,7 +55,7 @@ const AnimationScreenCard = styled("div")`
 `;
 
 const AnimationImageCard = styled("img")`
-  animation: ${animateOnSliding} 8s 4.5s forwards linear;
+  animation: ${animateOnSliding} 20s 5.5s forwards linear;
   position: absolute;
   width: 290px;
   top: 0;
@@ -63,7 +63,7 @@ const AnimationImageCard = styled("img")`
 `;
 
 const AnimationContinousImageCard = styled("img")`
-  animation: ${animateOnContinousSliding} 11.5s 7.5s linear infinite;
+  animation: ${animateOnContinousSliding} 31s 11.5s linear infinite;
   position: absolute;
   width: 290px;
   top: 0;

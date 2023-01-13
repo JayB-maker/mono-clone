@@ -36,7 +36,7 @@ export const AnimationCard = styled("div")`
 `;
 
 const AnimationScreenCard = styled("div")`
-  animation: ${animateOnOpacity} 0.5s 2.8s forwards;
+  animation: ${animateOnOpacity} 0.5s 3.3s forwards;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -48,6 +48,7 @@ const AnimationScreenCard = styled("div")`
 `;
 
 const DottedLine = styled("div")`
+  animation: ${animateOnOpacity} 1s 3.8s forwards;
   width: 45px;
   height: 240px;
   transform: skew(0deg, 28deg);
@@ -58,6 +59,7 @@ const DottedLine = styled("div")`
   top: -140px;
   left: 240px;
   z-index: 4;
+  opacity: 0;
 `;
 
 const Card2 = () => {
