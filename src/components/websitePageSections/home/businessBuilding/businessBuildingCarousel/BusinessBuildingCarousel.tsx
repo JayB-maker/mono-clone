@@ -6,6 +6,7 @@ const BusinessBuildingCarousel = () => {
   return (
     <Card
       padding="60px 60px 0"
+      smpadding="24px 24px 0"
       radius="15px"
       bg="#f5f5f5"
       flex
