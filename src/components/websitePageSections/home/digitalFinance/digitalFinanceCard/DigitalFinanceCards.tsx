@@ -18,7 +18,7 @@ const DigitalCardDetails = [
     color: "black",
     buttonDetails: "Start with DirectPay",
     buttonbg: "#0055ba",
-    buttonWidth:"206px",
+    buttonWidth: "206px",
     extraDetails:
       "https://res.cloudinary.com/dsx94d7pa/image/upload/v1671782077/Mono-clone/image_xqfk3t.svg",
   },
@@ -32,7 +32,7 @@ const DigitalCardDetails = [
     color: "white",
     buttonDetails: "Request access",
     buttonbg: "#202020",
-    buttonWidth:"176px",
+    buttonWidth: "176px",
     extraDetails:
       "https://res.cloudinary.com/dsx94d7pa/image/upload/v1671782077/Mono-clone/image_xqfk3t.svg",
   },
@@ -52,16 +52,36 @@ const DigitalFinanceCards = () => {
         flexdirection="column"
         gap="20px"
         padding="80px 60px"
+        smpadding="40px 24px 200px"
       >
         <Image
           src="https://res.cloudinary.com/dsx94d7pa/image/upload/v1671782068/Mono-clone/vector-6_1_qauay2.svg"
           alt="connect"
           width="40px"
         />
-        <TitleText size="45px" lineheight="56.25px" color={white}>
+        <TitleText
+          size="45px"
+          lineheight="56.25px"
+          color={white}
+          mdsize="30px"
+          smsize="24px"
+          mdlineheight="38px"
+          smlineheight="30px"
+        >
           Connect
         </TitleText>
-        <Text size="18px" lineheight="24px" color={white} width="370px">
+        <Text
+          size="18px"
+          lineheight="24px"
+          color={white}
+          width="370px"
+          mdwidth="370px"
+          smwidth="100%"
+          mdsize="16px"
+          smsize="15px"
+          mdlineheight="22px"
+          smlineheight="21px"
+        >
           Securely access financial accounts for statements, transactions, and
           identity
         </Text>
@@ -82,7 +102,7 @@ const DigitalFinanceCards = () => {
           <i className="fa-solid fa-arrow-right"></i>
         </Button>
       </Card>
-      <Card flex gap="20px">
+      <Card flex gap="20px" mdflexdirection="column">
         {DigitalCardDetails.map((detail, index) => (
           <Card
             key={index}
@@ -96,12 +116,31 @@ const DigitalFinanceCards = () => {
             flexdirection="column"
             gap="20px"
             padding="60px 60px"
+            smpadding="40px 24px 200px"
           >
             <Image src={detail.icon} alt="connect" width="40px" />
-            <TitleText size="45px" lineheight="56.25px" color={detail.color}>
+            <TitleText
+              size="45px"
+              lineheight="56.25px"
+              color={detail.color}
+              mdsize="30px"
+              smsize="24px"
+              mdlineheight="38px"
+              smlineheight="30px"
+            >
               {detail.heading}
             </TitleText>
-            <Text size="18px" lineheight="24px" color={detail.color} width="370px">
+            <Text
+              size="18px"
+              lineheight="24px"
+              color={detail.color}
+              width="370px"
+              smwidth="100%"
+              mdsize="16px"
+              smsize="15px"
+              mdlineheight="22px"
+              smlineheight="21px"
+            >
               {detail.details}
             </Text>
             <Button
