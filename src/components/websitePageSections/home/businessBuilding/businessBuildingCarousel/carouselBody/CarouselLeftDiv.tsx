@@ -24,13 +24,36 @@ const CarouselLeftDiv = () => {
               flexdirection="column"
               gap="20px"
             >
-              <TitleText size="45px" lineheight="56.25px">
+              <TitleText
+                size="45px"
+                lineheight="56.25px"
+                mdsize="30px"
+                smsize="24px"
+                mdlineheight="38px"
+                smlineheight="30px"
+              >
                 {detail.heading}
               </TitleText>
-              <Text size="18px" lineheight="24.75px" color="#606060">
+              <Text
+                size="18px"
+                lineheight="24.75px"
+                color="#606060"
+                mdsize="16px"
+                smsize="15px"
+                mdlineheight="22px"
+                smlineheight="21px"
+              >
                 {detail.details}
               </Text>
-              <Text size="18px" lineheight="24.75px" color="#606060">
+              <Text
+                size="18px"
+                lineheight="24.75px"
+                color="#606060"
+                mdsize="16px"
+                smsize="15px"
+                mdlineheight="22px"
+                smlineheight="21px"
+              >
                 {detail.detailsContd}
               </Text>
               <LinkText
@@ -42,7 +65,14 @@ const CarouselLeftDiv = () => {
                 hgap="7px"
                 alignitems="center"
               >
-                <Text heavy size="18px">
+                <Text
+                  heavy
+                  size="18px"
+                  mdsize="16px"
+                  smsize="15px"
+                  mdlineheight="22px"
+                  smlineheight="21px"
+                >
                   {detail.handle}
                 </Text>{" "}
                 <i className="fa-solid fa-arrow-right"></i>
