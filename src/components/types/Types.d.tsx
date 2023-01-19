@@ -15,6 +15,9 @@ export interface ICardProps {
   columngap?: string;
   color?: string;
   overflow?: string;
+  mdoverflow?: string;
+  xmdoverflow?: string;
+  smoverflow?: string;
   maxwidth?: string;
   filter?: string;
   maxheight?: string;
@@ -42,6 +45,18 @@ export interface ICardProps {
   right?: string;
   left?: string;
   bottom?: string;
+  mdtop?: string;
+  mdright?: string;
+  mdleft?: string;
+  mdbottom?: string;
+  xmdtop?: string;
+  xmdright?: string;
+  xmdleft?: string;
+  xmdbottom?: string;
+  smtop?: string;
+  smright?: string;
+  smleft?: string;
+  smbottom?: string;
   center?: boolean;
   lineheight?: string;
   overflowy?: string;
@@ -228,6 +243,7 @@ export interface IInputProps {
 }
 
 export interface ITextProps {
+  nowrap?: boolean;
   textalign?: string;
   mleft?: string;
   mright?: string;
