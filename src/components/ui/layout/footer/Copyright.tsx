@@ -2,8 +2,8 @@ import { Card, Circle, Image, Text, white } from "../../styles";
 
 const Copyright = () => {
   return (
-    <Card flex justifycontent="space-between" margin="-40px 0 0">
-      <Card flex gap="40px">
+    <Card flex smflexdirection="column" smalignitems="center" smgap="32px" justifycontent="space-between" margin="-40px 0 0">
+      <Card flex gap="40px" smflexdirection="column" smalignitems="center">
         <Image
           src="https://res.cloudinary.com/dsx94d7pa/image/upload/v1671782271/Mono-clone/footer-logo_pk0ril.svg"
           alt="mono-logo"
