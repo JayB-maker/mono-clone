@@ -5,7 +5,7 @@ import CarouselRightDiv from './CarouselRightDiv'
 
 const CarouselBody = () => {
   return (
-    <Card flex gap='85px'>
+    <Card flex gap='85px' smflexdirection='column' smwidth='100%'>
         <CarouselLeftDiv />
         <CarouselRightDiv />
     </Card>
