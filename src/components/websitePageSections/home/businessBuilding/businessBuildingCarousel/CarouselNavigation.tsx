@@ -14,21 +14,31 @@ const CarouselNavigation = () => {
     setCarouselState(index);
   };
   return (
-    <Card flex gap="10px" alignitems="center">
-      {carouselDetails.map((nav, index) => (
-        <Card
-          key={index}
-          padding="13px 20px"
-          radius="9999px"
-          bg={carouselState === index ? black : "transparent"}
-          pointer
-          onClick={() => handleNavClicked(index)}
-        >
-          <Text size="18px" color={carouselState === index ? white : black}>
-            {nav.nav}
-          </Text>
-        </Card>
-      ))}
+    <Card width="100%" smwidth="100%" smoverflow="scroll">
+      <Card flex gap="10px" alignitems="center">
+        {carouselDetails.map((nav, index) => (
+          <Card
+            key={index}
+            padding="13px 20px"
+            smpadding="10px 14px"
+            radius="9999px"
+            bg={carouselState === index ? black : "transparent"}
+            pointer
+            onClick={() => handleNavClicked(index)}
+          >
+            <Text
+              size="18px"
+              mdsize="30px"
+              smsize="15px"
+              smlineheight="19px"
+              nowrap
+              color={carouselState === index ? white : black}
+            >
+              {nav.nav}
+            </Text>
+          </Card>
+        ))}
+      </Card>
     </Card>
   );
 };
