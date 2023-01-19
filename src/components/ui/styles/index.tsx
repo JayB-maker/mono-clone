@@ -58,9 +58,11 @@ export const Card = styled("div")<ICardProps>`
     props.duration ? `${props.duration}` : "1s"};
   position: ${(props) => (props.position ? `${props.position}` : "unset")};
   background: ${(props) => (props.bg ? `${props.bg}` : "transparent")};
-  background-image: ${(props) => (props.bgimage ? `${props.bgimage}` : "unset")};
+  background-image: ${(props) =>
+    props.bgimage ? `${props.bgimage}` : "unset"};
   background-size: ${(props) => (props.bgsize ? `${props.bgsize}` : "unset")};
-  background-position: ${(props) => (props.bgposition ? `${props.bgposition}` : "unset")};
+  background-position: ${(props) =>
+    props.bgposition ? `${props.bgposition}` : "unset"};
   color: ${(props) => props.color && `${props.color}`};
   flex-wrap: ${(props) => props.wrap && "wrap"};
   width: ${(props) => (props.width ? `${props.width}` : "unset")};
@@ -162,6 +164,11 @@ export const Card = styled("div")<ICardProps>`
     justify-content: ${(props) =>
       props.mdjustifycontent && `${props.mdjustifycontent}`};
     flex: ${(props) => props.mdflexratio && `${props.mdflexratio}`};
+    overflow: ${(props) => props.mdoverflow && props.mdoverflow};
+    top: ${(props) => (props.mdtop ? `${props.mdtop}` : "unset")};
+    left: ${(props) => (props.mdleft ? `${props.mdleft}` : "unset")};
+    right: ${(props) => (props.mdright ? `${props.mdright}` : "unset")};
+    bottom: ${(props) => (props.mdbottom ? `${props.mdbottom}` : "unset")};
   }
 
   @media screen and (max-width: 768px) {
@@ -179,6 +186,11 @@ export const Card = styled("div")<ICardProps>`
     align-items: ${(props) => props.xmdalignitems && `${props.xmdalignitems}`};
     justify-content: ${(props) =>
       props.xmdjustifycontent && `${props.xmdjustifycontent}`};
+    overflow: ${(props) => props.xmdoverflow && props.xmdoverflow};
+    top: ${(props) => (props.xmdtop ? `${props.xmdtop}` : "unset")};
+    left: ${(props) => (props.xmdleft ? `${props.xmdleft}` : "unset")};
+    right: ${(props) => (props.xmdright ? `${props.xmdright}` : "unset")};
+    bottom: ${(props) => (props.xmdbottom ? `${props.xmdbottom}` : "unset")};
   }
 
   @media screen and (max-width: 600px) {
@@ -188,11 +200,17 @@ export const Card = styled("div")<ICardProps>`
     flex-direction: ${(props) =>
       props.smflexdirection && `${props.smflexdirection}`};
     width: ${(props) => props.smwidth && `${props.smwidth}`};
+    align-items: ${(props) => props.smalignitems && `${props.smalignitems}`};
     height: ${(props) => props.smheight && `${props.smheight}`};
     gap: ${(props) => props.smgap && `${props.smgap}`};
     margin: ${(props) => props.smmargin && `${props.smmargin}`};
     padding: ${(props) => props.smpadding && `${props.smpadding}`};
     border-radius: ${(props) => props.smradius && `${props.smradius}`};
+    overflow: ${(props) => props.smoverflow && props.smoverflow};
+    top: ${(props) => (props.smtop ? `${props.smtop}` : "unset")};
+    left: ${(props) => (props.smleft ? `${props.smleft}` : "unset")};
+    right: ${(props) => (props.smright ? `${props.smright}` : "unset")};
+    bottom: ${(props) => (props.smbottom ? `${props.smbottom}` : "unset")};
   }
 `;
 
@@ -287,7 +305,7 @@ export const LinkText = styled(Link)<ILinkProps>`
     color: ${(props) => props.hcolor && `${props.hcolor}`};
     background: ${(props) => props.hbg && `${props.hbg}`};
     text-decoration: ${(props) => props.hdecoration && `${props.hdecoration}`};
-    gap: ${(props) => (props.hgap && `${props.hgap}`)};
+    gap: ${(props) => props.hgap && `${props.hgap}`};
   }
 
   @media screen and (max-width: 1024px) {
@@ -415,6 +433,7 @@ export const TextAreaField = styled("textarea")<IInputProps>`
 
 export const Text = styled.p<ITextProps>`
   font-size: ${(props) => (props.size ? `${props.size}` : "18px")};
+  white-space: ${(props) => (props.nowrap && "nowrap")};
   font-weight: ${(props) => (props.heavy ? "700" : "400")};
   line-height: ${(props) => props.lineheight && `${props.lineheight}`};
   text-align: ${(props) => props.center && "center"};
@@ -577,9 +596,11 @@ export const MainSection = styled("section")<ICardProps>`
   background: ${(props) => props.bg && props.bg};
   //   height: 100%;
   height: ${(props) => props.height && props.height};
-  background-image: ${(props) => (props.bgimage ? `${props.bgimage}` : "unset")};
+  background-image: ${(props) =>
+    props.bgimage ? `${props.bgimage}` : "unset"};
   background-size: ${(props) => (props.bgsize ? `${props.bgsize}` : "unset")};
-  background-position: ${(props) => (props.bgposition ? `${props.bgposition}` : "unset")};
+  background-position: ${(props) =>
+    props.bgposition ? `${props.bgposition}` : "unset"};
   overflow-y: ${(props) => props.overflowy && props.overflowy};
   overflow-x: ${(props) => props.overflowx && props.overflowx};
   z-index: ${(props) => (props.index ? `${props.index}` : "unset")};
@@ -631,8 +652,8 @@ export const Circle = styled("div")<ICardProps>`
 `;
 
 export const Button = styled("button")<ICardProps>`
-position: ${(props) => (props.position ? `${props.position}` : "unset")};
-top: ${(props) => (props.top ? `${props.top}` : "unset")};
+  position: ${(props) => (props.position ? `${props.position}` : "unset")};
+  top: ${(props) => (props.top ? `${props.top}` : "unset")};
   left: ${(props) => (props.left ? `${props.left}` : "unset")};
   right: ${(props) => (props.right ? `${props.right}` : "unset")};
   bottom: ${(props) => (props.bottom ? `${props.bottom}` : "unset")};
