@@ -13,14 +13,33 @@ const StartBuilding = () => {
       flex
       flexdirection="column"
       width="672px"
+      smwidth="100%"
       gap="15px"
       alignitems="center"
       margin="0 auto"
     >
-      <TitleText size="64px" lineheight="73.6px" color={white}>
+      <TitleText
+        size="64px"
+        lineheight="73.6px"
+        color={white}
+        mdsize="48px"
+        mdlineheight="55px"
+        smsize="30px"
+        smlineheight="35px"
+        center
+      >
         Start building with Mono
       </TitleText>
-      <Text size="26px" lineheight="35.7px" color={white} center>
+      <Text
+        size="26px"
+        lineheight="35.7px"
+        color={white}
+        center
+        mdsize="20px"
+        mdlineheight="28px"
+        smsize="16px"
+        smlineheight="22px"
+      >
         Access high-quality financial data and start processing payments
         directly from bank accounts in minutes.
       </Text>
