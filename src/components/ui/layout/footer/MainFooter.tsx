@@ -4,11 +4,12 @@ import { Card, LinkText, TitleText, white } from "../../styles";
 const MainFooter = () => {
   return (
     <>
-      <Card flex gap="50px">
+      <Card flex gap="50px" smdisplay="grid" smgridcolumn="1fr 1fr">
         {footerContents.map((item) => (
           <Card
             key={item.id}
             width="250px"
+            smwidth="unset"
             flex
             flexdirection="column"
             gap="18px"
@@ -18,6 +19,8 @@ const MainFooter = () => {
               weight="500"
               size="16px"
               lineheight="19px"
+              smsize="14px"
+              smlineheight="20px"
             >
               {item.heading}
             </TitleText>
@@ -48,6 +51,7 @@ const MainFooter = () => {
                     weight="400"
                     size="16px"
                     lineheight="19px"
+                    smsize="14px"
                   >
                     {subitem.handle}
                   </LinkText>
