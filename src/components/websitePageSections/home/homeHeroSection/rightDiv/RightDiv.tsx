@@ -10,7 +10,7 @@ const replay = () => {
 
 const RightDiv = () => {
   return (
-    <Card flexratio="4" width="100%" position="relative">
+    <Card flexratio="4" width="100%" position="relative" mddisplay="none">
       <Card position="relative" top="-140px" right="-120px">
         <Card1 />
         <Card2 />
