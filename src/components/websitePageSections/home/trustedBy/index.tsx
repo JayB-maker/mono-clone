@@ -33,10 +33,10 @@ const TrustedBy = () => {
           <Text size="15px" lineheight="22.5px">
             Trusted by
           </Text>
-          <Card flex gap="40px" alignitems="center">
+          <Card flex gap="40px" smgap="20px" alignitems="center" smdisplay="grid" smgridcolumn="1fr 1fr">
             {partnerDetails.map((partner, index) => (
-              <Card width="255px" key={index}>
-                <Image src={partner.logo} alt={partner.name} />
+              <Card width="255px" smwidth="100%" key={index}>
+                <Image src={partner.logo} alt={partner.name} smwidth="70%" />
               </Card>
             ))}
           </Card>
