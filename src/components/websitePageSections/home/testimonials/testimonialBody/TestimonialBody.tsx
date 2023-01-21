@@ -18,6 +18,8 @@ const TestimonialBody = () => {
         width="200%"
         flex
         gap="20px"
+        mddisplay="grid"
+        mdgridcolumn="1fr 1fr"
         position="absolute"
         right={isControllerClicked ? "0" : "-100%"}
         transition="0.7s linear"
@@ -30,12 +32,13 @@ const TestimonialBody = () => {
             radius="15px"
             height="800px"
             padding="60px"
+            smpadding="24px"
             position="relative"
           >
             <Text size="120px" italic margin="0 0 0 -20px">
               "
             </Text>
-            <TitleText size="45px" lineheight="56.25px" margin="-80px 0 0">
+            <TitleText size="45px" lineheight="56.25px" margin="-80px 0 0" smsize="24px" smlineheight="30px">
               {testimonial.testimonial}
             </TitleText>
             <Card
