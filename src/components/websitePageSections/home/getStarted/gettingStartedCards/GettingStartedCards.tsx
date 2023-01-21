@@ -17,7 +17,7 @@ const GettingStartedCards = () => {
           image={detail.image}
         />
       ))}
-      <Card flex gap="20px">
+      <Card flex gap="20px" smflexdirection="column">
         {gettingStartedDetails.map((detail, index) => (
           <ReusableCard
             icon={detail.icon}
