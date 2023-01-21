@@ -7,7 +7,7 @@ const HomeHeroSection = () => {
     <>
       <MainSection width="100%" padding="0 0 100px">
         <InnerSection>
-          <Card flex alignitems="center">
+          <Card flex alignitems="center" mdflexdirection="column">
             <LeftDiv />
             <RightDiv />
           </Card>
