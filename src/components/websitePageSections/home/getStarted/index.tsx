@@ -19,7 +19,15 @@ const GetStarted = () => {
     >
       <InnerSection>
         <Card flex flexdirection="column" gap="80px">
-          <TitleText size="64px" lineheight="73.6px" color={white}>
+          <TitleText
+            size="64px"
+            lineheight="73.6px"
+            color={white}
+            mdsize="48px"
+            mdlineheight="55px"
+            smsize="30px"
+            smlineheight="35px"
+          >
             Getting Started
           </TitleText>
           <GettingStartedCards />
