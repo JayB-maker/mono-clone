@@ -10,7 +10,7 @@ import {
 
 const LeftDiv = () => {
   return (
-    <Card flex flexdirection="column" gap="30px" flexratio="5">
+    <Card flex flexdirection="column" gap="30px" smgap="20px" flexratio="5">
       <Card
         radius="9999px"
         flex
@@ -36,10 +36,28 @@ const LeftDiv = () => {
           Mono is live in Kenya!
         </Text>
       </Card>
-      <TitleText size="92px" margin="20px 0 0" lineheight="92px" weight="500">
+      <TitleText
+        size="92px"
+        margin="20px 0 0"
+        lineheight="92px"
+        mdsize="66px"
+        smsize="36px"
+        mdlineheight="76px"
+        smlineheight="41px"
+        mdwidth="500px"
+        smwidth="100%"
+        weight="500"
+      >
         Reliably access bank account
       </TitleText>
-      <Text size="26px" lineheight="40px">
+      <Text
+        size="26px"
+        lineheight="40px"
+        mdsize="20px"
+        smsize="16px"
+        mdlineheight="28px"
+        smlineheight="22px"
+      >
         Mono helps businesses to access high-quality financial data and direct
         bank payments.
       </Text>
