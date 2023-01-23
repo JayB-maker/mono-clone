@@ -198,11 +198,13 @@ export interface ILinkProps {
   mdsize?: string;
   mdpadding?: string;
   mddisplay?: string;
+  mdalignitems?: string;
 
   smwidth?: string;
   smsize?: string;
   smpadding?: string;
   smdisplay?: string;
+  smalignitems?: string;
 }
 
 export interface IDividerProps {
