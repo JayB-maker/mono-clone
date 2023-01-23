@@ -9,49 +9,50 @@ import {
   TitleText,
   white,
 } from "../../../../ui/styles";
-import MobileTestimonialBody from "./MobileTestimonialBody";
 
-const TestimonialBody = () => {
+const MobileTestimonialBody = () => {
   const { isControllerClicked } = useContext(TestimonialContext);
   return (
-    <Card height="800px" overflow="hidden" position="relative">
+    <>
       <Card
         width="200%"
-        flex
-        smdisplay="none"
+        display="none"
+        smdisplay="grid"
+        smgridcolumn="1fr 1fr"
         gap="20px"
         position="absolute"
-        right={isControllerClicked ? "0" : "-100%"}
-        transition="0.7s linear"
+        smright={isControllerClicked ? "0" : "-100%"}
+        transition="0.6s linear"
       >
         {testimonialDetails.map((testimonial, index) => (
           <Card
             key={index}
-            flexratio="1"
             bg="#f5f5f5"
             radius="15px"
-            height="800px"
-            padding="60px"
-            smpadding="24px"
+            height="368px"
+            padding="24px"
             position="relative"
+            flex
+            flexdirection="column"
+            justifycontent="space-between"
           >
-            <Text size="120px" italic margin="0 0 0 -20px">
-              "
-            </Text>
-            <TitleText size="45px" lineheight="56.25px" margin="-80px 0 0" smsize="24px" smlineheight="30px">
-              {testimonial.testimonial}
-            </TitleText>
+            <Card>
+              <Text size="80px" italic margin="0 0 0 -15px">
+                "
+              </Text>
+              <TitleText margin="-40px 0 0" size="24px" lineheight="30px">
+                {testimonial.testimonial}
+              </TitleText>
+            </Card>
             <Card
-              position="absolute"
-              bottom="60px"
-              left="60px"
+              position="relative"
               flex
               alignitems="center"
               gap="25px"
             >
               <Card
-                width="50px"
-                height="50px"
+                width="32px"
+                height="32px"
                 radius="50%"
                 bg={black}
                 overflow="hidden"
@@ -60,12 +61,12 @@ const TestimonialBody = () => {
               </Card>
               <Card
                 position="absolute"
-                padding="4px"
-                width="24px"
+                padding="2px"
+                width="20px"
                 bg={white}
                 radius="50%"
-                bottom="0"
-                left="40px"
+                smbottom="0"
+                smleft="20px"
               >
                 <Image src={testimonial.logo} width="100%" />
               </Card>
@@ -81,9 +82,8 @@ const TestimonialBody = () => {
           </Card>
         ))}
       </Card>
-      <MobileTestimonialBody />
-    </Card>
+    </>
   );
 };
 
-export default TestimonialBody;
+export default MobileTestimonialBody;
