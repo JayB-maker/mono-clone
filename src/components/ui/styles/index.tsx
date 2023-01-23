@@ -314,12 +314,16 @@ export const LinkText = styled(Link)<ILinkProps>`
     padding: ${(props) => props.mdpadding && `${props.mdpadding}`};
     display: ${(props) => props.mddisplay && `${props.mddisplay}`};
     gap: ${(props) => (props.hgap ? `${props.hgap}` : "unset")};
+    align-items: ${(props) =>
+      props.mdalignitems ? `${props.mdalignitems}` : "unset"};
   }
   @media screen and (max-width: 600px) {
     width: ${(props) => props.smwidth && `${props.smwidth}`};
     font-size: ${(props) => props.smsize && `${props.smsize}`};
     padding: ${(props) => props.smpadding && `${props.smpadding}`};
     display: ${(props) => props.smdisplay && `${props.smdisplay}`};
+    align-items: ${(props) =>
+      props.smalignitems ? `${props.smalignitems}` : "unset"};
   }
 `;
 
