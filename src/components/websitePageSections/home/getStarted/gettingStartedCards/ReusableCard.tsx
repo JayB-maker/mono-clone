@@ -27,7 +27,7 @@ const ReusableCard = (props: ReusableCardProps) => {
         flexdirection="column"
         gap="20px"
         flexratio="1"
-        alignitems="center"
+        smalignitems="center"
       >
         <Image src={icon} width="67px" height="67px" />
         <TitleText
