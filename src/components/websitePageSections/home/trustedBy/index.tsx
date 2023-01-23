@@ -29,11 +29,24 @@ const TrustedBy = () => {
   return (
     <MainSection width="100%">
       <InnerSection>
-        <Card flex flexdirection="column" gap="50px" padding="70px 0">
+        <Card
+          flex
+          flexdirection="column"
+          gap="50px"
+          padding="70px 0"
+          smpadding="50px 0"
+        >
           <Text size="15px" lineheight="22.5px">
             Trusted by
           </Text>
-          <Card flex gap="40px" smgap="20px" alignitems="center" smdisplay="grid" smgridcolumn="1fr 1fr">
+          <Card
+            flex
+            gap="40px"
+            smgap="20px"
+            alignitems="center"
+            smdisplay="grid"
+            smgridcolumn="1fr 1fr"
+          >
             {partnerDetails.map((partner, index) => (
               <Card width="255px" smwidth="100%" key={index}>
                 <Image src={partner.logo} alt={partner.name} smwidth="70%" />
