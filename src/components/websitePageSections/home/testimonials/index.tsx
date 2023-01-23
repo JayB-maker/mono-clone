@@ -18,7 +18,7 @@ const Testimonials = () => {
             flex
             flexdirection="column"
             gap="85px"
-            
+            smgap="50px"
           >
             <TestimonialHeading />
             <TestimonialBody />
