@@ -24,7 +24,7 @@ const MobileNavigator = () => {
         position="fixed"
         top="0"
         left="0"
-        margin="-30px 0 0"
+        margin="0px 0 0"
         index="100"
         flex
         justifycontent="center"
