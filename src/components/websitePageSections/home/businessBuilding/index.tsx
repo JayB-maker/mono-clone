@@ -12,7 +12,7 @@ const BusinessBuilding = () => {
         <BusinessBuildingContext.Provider
           value={{ carouselState, setCarouselState }}
         >
-          <Card padding="50px 0 100px" flex flexdirection="column" gap="80px">
+          <Card padding="50px 0 100px" smpadding="40px 0 30px" flex flexdirection="column" gap="80px">
             <BusinessBuildingHeading />
             <BusinessBuildingCarousel />
           </Card>
