@@ -6,7 +6,7 @@ const DigitalFinance = () => {
   return (
     <MainSection width="100%">
       <InnerSection>
-        <Card flex flexdirection="column" gap="80px" padding="30px 0 100px">
+        <Card flex flexdirection="column" gap="80px" padding="30px 0 100px" smpadding="20px 0  100px">
           <DigitalFinanceHeading />
           <DigitalFinanceCards />
         </Card>
