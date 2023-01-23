@@ -32,7 +32,6 @@ const MobileHeader = () => {
             justifycontent="space-between"
             alignitems="center"
             padding="24px 0"
-            // position=
             index="1000"
             top="0"
             left="0"
