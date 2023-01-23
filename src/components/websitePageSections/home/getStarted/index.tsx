@@ -15,10 +15,11 @@ const GetStarted = () => {
       bgsize="cover"
       bgposition="center"
       padding="150px 0"
+      smpadding="100px 0"
       margin="50px 0 0"
     >
       <InnerSection>
-        <Card flex flexdirection="column" gap="80px">
+        <Card flex flexdirection="column" gap="80px" smgap="60px">
           <TitleText
             size="64px"
             lineheight="73.6px"
